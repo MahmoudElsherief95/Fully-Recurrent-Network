@@ -13,6 +13,7 @@ There are two classes, both occurring with probability 0.5. There is one input u
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Exercise 3: The backward pass
 Write a function `backward` that takes a model `self` as argument. The function should compute the gradients of the loss with respect to all model parameters and store them to `self.dW`, `self.dR`, `self.dV`, respectively.
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Exercise 4: Gradient checking
 
@@ -22,8 +23,10 @@ Write a function `backward` that takes a model `self` as argument. The function 
 ## Exercise 5: Parameter update
 
 Write a function `update` that takes a model `self` and a float argument `eta`, which represents the learning rate. The method should implement the gradient descent update rule $\theta \gets \theta - \eta \nabla_{\theta}L$ for all model parameters $\theta$.
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Exercise 6: Network training
 
 Train the fully recurrent network with 32 hidden units. Start with input sequences of length one and tune the learning rate and the number of update steps. Then increase the sequence length by one and tune the hyperparameters again. What is the maximal sequence length for which the fully recurrent network can achieve a performance that is better than random? Visualize your results.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
